@@ -1,5 +1,5 @@
 import useSEO from "../hooks/useSEO"
-import aboutImg from "../assets/images/about.jpg"
+import aboutImg from "../assets/images/factory.jpg"
 import ownerImg from "../assets/images/owner.jpg"
 
 export default function About() {
