@@ -1,67 +1,60 @@
 import useSEO from "../hooks/useSEO"
-import s1 from "../assets/images/service-1.jpg"
-import s2 from "../assets/images/service-2.jpg"
-import s3 from "../assets/images/service-3.jpg"
+import { motion } from "framer-motion"
+import { FaIndustry, FaCheckCircle, FaTruck, FaCogs } from "react-icons/fa"
 
 export default function Services() {
   useSEO(
     "Services | Al-Janat Textile",
-    "Textile manufacturing and fabric supply services across Pakistan."
+    "Textile manufacturing, fabric processing and nationwide supply services"
   )
 
+  const services = [
+    {
+      icon: <FaIndustry />,
+      title: "Textile Manufacturing",
+      desc: "Complete in-house textile manufacturing using modern machinery and international production standards."
+    },
+    {
+      icon: <FaCogs />,
+      title: "Fabric Processing",
+      desc: "Dyeing, finishing and quality enhancement with strict inspection control at every stage."
+    },
+    {
+      icon: <FaCheckCircle />,
+      title: "Quality Assurance",
+      desc: "100% quality assurance ensuring export-grade fabric for local and international markets."
+    },
+    {
+      icon: <FaTruck />,
+      title: "Nationwide Supply",
+      desc: "Reliable and timely textile supply across Pakistan with trusted logistics partners."
+    }
+  ]
+
   return (
-    <section className="py-28 bg-gray-50 animate-fadeIn">
+    <section className="py-28 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-        <h1 className="text-4xl font-bold text-center mb-10 text-[#0f2a44]">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-20 text-[#0f2a44]">
           Our Services
         </h1>
 
-        <p className="text-center text-gray-600 max-w-3xl mx-auto mb-20 leading-8">
-          Al-Janat Textile provides end-to-end textile manufacturing services,
-          delivering reliable fabric solutions to businesses across Pakistan.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-12">
-          {/* SERVICE */}
-          <div className="bg-white border shadow hover:shadow-2xl transition">
-            <img src={s1} className="h-56 w-full object-cover" />
-            <div className="p-8">
-              <h3 className="text-xl font-semibold mb-4">
-                Fabric Manufacturing
-              </h3>
-              <p className="text-gray-600 leading-7 text-sm">
-                We manufacture high-quality fabric using modern machines,
-                ensuring strength, consistency, and premium finishing for
-                wholesale supply.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white border shadow hover:shadow-2xl transition">
-            <img src={s2} className="h-56 w-full object-cover" />
-            <div className="p-8">
-              <h3 className="text-xl font-semibold mb-4">
-                Dyeing & Processing
-              </h3>
-              <p className="text-gray-600 leading-7 text-sm">
-                Our dyeing and processing units follow strict quality standards
-                to ensure long-lasting color and smooth fabric texture.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-white border shadow hover:shadow-2xl transition">
-            <img src={s3} className="h-56 w-full object-cover" />
-            <div className="p-8">
-              <h3 className="text-xl font-semibold mb-4">
-                Nationwide Supply
-              </h3>
-              <p className="text-gray-600 leading-7 text-sm">
-                We supply textile products across Pakistan, serving mills,
-                traders, and distributors with timely delivery.
-              </p>
-            </div>
-          </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+          {services.map((s, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white p-10 text-center shadow hover:shadow-xl transition"
+            >
+              <div className="text-4xl text-[#b88a44] mb-6 flex justify-center">
+                {s.icon}
+              </div>
+              <h3 className="text-lg font-semibold mb-4">{s.title}</h3>
+              <p className="text-gray-600 leading-7">{s.desc}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

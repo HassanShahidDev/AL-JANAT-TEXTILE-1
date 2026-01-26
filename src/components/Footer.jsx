@@ -1,17 +1,26 @@
+import logo from "../assets/images/logo.jpg"
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 mt-20">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8">
+    <footer className="bg-[#0f2a44] text-gray-300 py-16">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+
+        {/* BRAND */}
         <div>
-          <h3 className="text-white text-xl font-bold">Al-Janat Textile</h3>
-          <p className="mt-4 text-sm">
-            Premium textile manufacturing company delivering export-quality
-            fabrics worldwide.
+          <img
+            src={logo}
+            alt="Al-Janat Textile"
+            className="h-12 bg-white p-2 rounded"
+          />
+          <p className="mt-6 text-sm leading-7">
+            Al-Janat Textile is a trusted Pakistani textile manufacturer
+            supplying premium fabrics nationwide since 1988.
           </p>
         </div>
 
+        {/* LINKS */}
         <div>
-          <h4 className="text-white font-semibold mb-3">Quick Links</h4>
+          <h4 className="text-white font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             <li>Home</li>
             <li>About</li>
@@ -21,16 +30,17 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* CONTACT */}
         <div>
-          <h4 className="text-white font-semibold mb-3">Contact</h4>
-          <p className="text-sm">Karachi, Pakistan</p>
-          <p className="text-sm">info@aljanattextile.com</p>
-          <p className="text-sm">+92 3XX XXXXXXX</p>
+          <h4 className="text-white font-semibold mb-4">Contact</h4>
+          <p className="text-sm">📞 0301-8655255</p>
+          <p className="text-sm mt-2">📍 Pakistan</p>
         </div>
       </div>
 
-      <div className="text-center text-xs py-4 border-t border-gray-700">
-        © 2026 Al-Janat Textile. All rights reserved.
+      {/* BOTTOM */}
+      <div className="border-t border-white/10 mt-12 pt-6 text-center text-sm">
+        © {new Date().getFullYear()} Al-Janat Textile · Developed by <strong>hassndev</strong>
       </div>
     </footer>
   )

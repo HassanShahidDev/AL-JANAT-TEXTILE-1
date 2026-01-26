@@ -1,18 +1,65 @@
-import { Link } from "react-router-dom"
+import { useState } from "react"
+import { NavLink } from "react-router-dom"
+import logo from "../assets/images/logo.jpg"
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false)
+
   return (
-    <nav className="fixed top-0 w-full bg-white shadow z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        <h1 className="text-2xl font-bold">Al-Janat Textile</h1>
-        <div className="space-x-6 font-medium">
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/products">Products</Link>
-          <Link to="/contact">Contact</Link>
-        </div>
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+
+        {/* LOGO */}
+        <NavLink to="/" className="flex items-center gap-3">
+          <img
+            src={logo}
+            alt="Al-Janat Textile Logo"
+            className="h-10 w-auto"
+          />
+          <span className="font-bold text-lg text-[#0f2a44] hidden sm:block">
+            Al-Janat Textile
+          </span>
+        </NavLink>
+
+        {/* DESKTOP NAV */}
+        <nav className="hidden md:flex gap-8 font-medium">
+          <NavLink to="/" className="hover:text-[#b88a44]">Home</NavLink>
+          <NavLink to="/about" className="hover:text-[#b88a44]">About</NavLink>
+          <NavLink to="/services" className="hover:text-[#b88a44]">Services</NavLink>
+          <NavLink to="/products" className="hover:text-[#b88a44]">Products</NavLink>
+          <NavLink to="/contact" className="hover:text-[#b88a44]">Contact</NavLink>
+        </nav>
+
+        {/* MOBILE BUTTON */}
+        <button
+          className="md:hidden text-3xl"
+          onClick={() => setOpen(!open)}
+        >
+          ☰
+        </button>
       </div>
-    </nav>
+
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="md:hidden bg-white border-t">
+          {[
+            ["Home", "/"],
+            ["About", "/about"],
+            ["Services", "/services"],
+            ["Products", "/products"],
+            ["Contact", "/contact"],
+          ].map(([label, path]) => (
+            <NavLink
+              key={path}
+              to={path}
+              onClick={() => setOpen(false)}
+              className="block px-6 py-4 border-b"
+            >
+              {label}
+            </NavLink>
+          ))}
+        </div>
+      )}
+    </header>
   )
 }
