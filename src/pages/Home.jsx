@@ -75,6 +75,7 @@ export default function Home() {
 
       {/* STATS SECTION */}
       <Stats />
+      
 
       {/* TESTIMONIALS SECTION */}
       <Testimonials />
