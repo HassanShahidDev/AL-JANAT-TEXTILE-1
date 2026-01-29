@@ -1,5 +1,5 @@
 import useSEO from "../hooks/useSEO"
-import heroImg from "../assets/images/hero.jpg"
+import heroImg from "../assets/images/hero.png"
 
 import Stats from "../components/Stats"
 import Testimonials from "../components/Testimonials"

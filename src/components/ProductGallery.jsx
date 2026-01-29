@@ -1,12 +1,12 @@
 import AnimateOnScroll from "./AnimateOnScroll"
 
 // ✅ IMPORT IMAGES
-import p1 from "../assets/products/1.jpg"
-import p2 from "../assets/products/2.jpg"
-import p3 from "../assets/products/3.jpg"
-import p4 from "../assets/products/4.jpg"
-import p5 from "../assets/products/5.jpg"
-import p6 from "../assets/products/6.jpg"
+import p1 from "../assets/products/1.png"
+import p2 from "../assets/products/2.png"
+import p3 from "../assets/products/3.png"
+import p4 from "../assets/products/4.png"
+import p5 from "../assets/products/5.png"
+import p6 from "../assets/products/6.png"
 
 const products = [
   { name: "Premium Cotton Fabric", image: p1 },
