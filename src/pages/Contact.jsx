@@ -46,20 +46,51 @@ export default function Contact() {
 
           {/* FORM */}
           <AnimateOnScroll animation="fade-left">
-            <form className="bg-white p-10 rounded-2xl shadow-xl space-y-6">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              className="bg-white p-10 rounded-2xl shadow-xl space-y-6"
+            >
+              {/* WEB3 ACCESS KEY */}
+              <input
+                type="hidden"
+                name="access_key"
+                value="bd19c208-d0f9-45e1-a9fa-a91c6ac2343d"
+              />
+
+              {/* OPTIONAL BUT PROFESSIONAL */}
+              <input
+                type="hidden"
+                name="subject"
+                value="New Inquiry - Al-Janat Textile"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Al-Janat Textile Website"
+              />
+
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
+                required
                 className="w-full border px-5 py-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b88a44]"
               />
+
               <input
                 type="email"
+                name="email"
                 placeholder="Email Address"
+                required
                 className="w-full border px-5 py-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b88a44]"
               />
+
               <textarea
+                name="message"
                 placeholder="Your Message"
                 rows="5"
+                required
                 className="w-full border px-5 py-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b88a44]"
               ></textarea>
 

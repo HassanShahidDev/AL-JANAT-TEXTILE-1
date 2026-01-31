@@ -55,7 +55,7 @@ export default function Home() {
                 Skilled Workforce
               </h3>
               <p className="text-gray-600 leading-7">
-                Over 200 skilled professionals managing every stage from weaving
+                Over 400 skilled professionals managing every stage from weaving
                 to finishing.
               </p>
             </div>

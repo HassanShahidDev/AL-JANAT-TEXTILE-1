@@ -10,11 +10,11 @@ import p6 from "../assets/products/6.png"
 
 const products = [
   { name: "Premium Cotton Fabric", image: p1 },
-  { name: "Poly Cotton Blend", image: p2 },
+  { name: "premium Boilers", image: p2 },
   { name: "Dyed Textile Fabric", image: p3 },
   { name: "Industrial Fabric Roll", image: p4 },
   { name: "Export Quality Cloth", image: p5 },
-  { name: "Fine Weave Fabric", image: p6 },
+  { name: "Fine Fabric", image: p6 },
 ]
 
 export default function ProductGallery() {

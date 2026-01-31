@@ -16,7 +16,7 @@ export default function Services() {
     },
     {
       icon: <FaCogs />,
-      title: "Fabric Processing",
+      title: "Dyeing Processing",
       desc: "Dyeing, finishing and quality enhancement with strict inspection control at every stage."
     },
     {

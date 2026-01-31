@@ -15,6 +15,10 @@ export default function Testimonials() {
     {
       name: "Retail Chain – Faisalabad",
       text: "Excellent finishing, reliable supply, and strong quality control standards."
+    },
+    {
+      name: "Retail Chain – Gujranwala",
+      text: "Excellent finishing, reliable supply, and strong quality control standards."
     }
   ]
 

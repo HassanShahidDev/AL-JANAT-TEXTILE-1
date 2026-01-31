@@ -15,7 +15,7 @@ export default function Products() {
         <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-5xl font-bold">Our Products</h1>
           <p className="mt-6 text-gray-200 max-w-2xl mx-auto">
-            Premium quality fabrics manufactured with modern machinery and
+            Premium quality Dyeing manufactured with modern machinery and
             strict quality control standards.
           </p>
         </div>
@@ -30,7 +30,7 @@ export default function Products() {
             </h2>
             <p className="text-gray-600 leading-8">
               From local markets to nationwide supply, Al-Janat Textile delivers
-              reliable fabric solutions trusted by businesses since 1988.
+              reliable dyeing solutions trusted by businesses since 1988.
             </p>
           </AnimateOnScroll>
         </div>

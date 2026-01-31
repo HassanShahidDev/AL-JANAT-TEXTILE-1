@@ -34,7 +34,9 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-semibold mb-4">Contact</h4>
           <p className="text-sm">📞 0301-8655255</p>
-          <p className="text-sm mt-2">📍 Pakistan</p>
+          <p className="text-sm">📞 0321-7685268</p>
+          <p className="text-sm">📩 aljanattextileind@gmail.com</p>
+          <p className="text-sm mt-2">📍 AL-JANAT-TEXTILE ODEAN STREET SAMUNDRI ROAD FSD</p>
         </div>
       </div>
 

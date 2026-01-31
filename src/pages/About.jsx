@@ -37,7 +37,7 @@ export default function About() {
               Our Factory & Workforce
             </h2>
             <p className="text-gray-600 leading-8 mb-6">
-              With over <strong>200+ skilled workers</strong>, Al-Janat Textile
+              With over <strong>400+ skilled workers</strong>, Al-Janat Textile
               operates modern machinery capable of fulfilling bulk orders for
               mills, distributors, and wholesalers throughout Pakistan.
             </p>
@@ -56,7 +56,7 @@ export default function About() {
               Owner & Leadership
             </h2>
             <p className="text-gray-600 leading-8 mb-4">
-              <strong>Mr. Shahzad Aslam</strong>, the owner of Al-Janat Textile,
+              <strong>Mr. Shahzad Aslam</strong>, the key holder of Al-Janat Textile,
               has decades of hands-on experience in the textile industry.
             </p>
             <p className="text-gray-600 leading-8">

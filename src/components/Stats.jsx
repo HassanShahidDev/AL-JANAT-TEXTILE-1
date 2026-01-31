@@ -6,7 +6,7 @@ export default function Stats() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 text-center">
         {[
           { num: "35+", label: "Years Experience" },
-          { num: "200+", label: "Skilled Workers" },
+          { num: "400+", label: "Skilled Workers" },
           { num: "100%", label: "Quality Assurance" },
           { num: "Nationwide", label: "Supply Network" }
         ].map((s, i) => (

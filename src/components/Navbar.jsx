@@ -26,7 +26,7 @@ export default function Navbar() {
           <NavLink to="/" className="hover:text-[#b88a44]">Home</NavLink>
           <NavLink to="/about" className="hover:text-[#b88a44]">About</NavLink>
           <NavLink to="/services" className="hover:text-[#b88a44]">Services</NavLink>
-          <NavLink to="/products" className="hover:text-[#b88a44]">Products</NavLink>
+          <NavLink to="/products" className="hover:text-[#b88a44]">Blog</NavLink>
           <NavLink to="/contact" className="hover:text-[#b88a44]">Contact</NavLink>
         </nav>
 
