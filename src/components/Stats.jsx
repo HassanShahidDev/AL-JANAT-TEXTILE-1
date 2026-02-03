@@ -3,10 +3,9 @@ import { motion } from "framer-motion"
 export default function Stats() {
   return (
     <section className="py-24 bg-[#0f2a44] text-white">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 text-center">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
         {[
           { num: "35+", label: "Years Experience" },
-          { num: "400+", label: "Skilled Workers" },
           { num: "100%", label: "Quality Assurance" },
           { num: "Nationwide", label: "Supply Network" }
         ].map((s, i) => (
