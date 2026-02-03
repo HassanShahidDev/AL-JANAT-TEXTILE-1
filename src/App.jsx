@@ -7,6 +7,7 @@ import About from "./pages/About"
 import Services from "./pages/Services"
 import Products from "./pages/Products"
 import Contact from "./pages/Contact"
+import ScrollToTop from "./layout/ScrollToTop"
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <WhatsAppButton />
 
       <Layout>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
