@@ -55,10 +55,10 @@ export default function About() {
   {/* CONTENT — MOBILE FIRST */}
   <div className="order-1 md:order-2 animate-fadeInRight">
     <h2 className="text-3xl font-semibold mb-6 text-[#0f2a44]">
-      CEO – Al-Janat Textile
+      Owner & Leadership
     </h2>
     <p className="text-gray-600 leading-8 mb-4">
-      <strong>Mr. Synny Ali Raza</strong> oversees strategic planning,
+      <strong>Mr. Sunny Ali Raza</strong> oversees strategic planning,
       operations, and future expansion.
     </p>
     <p className="text-gray-600 leading-8">
