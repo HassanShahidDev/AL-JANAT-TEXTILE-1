@@ -1,12 +1,38 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { NavLink } from "react-router-dom"
 import logo from "../assets/images/logo.png"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+  const [show, setShow] = useState(true)
+  const [lastScroll, setLastScroll] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY
+
+      if (currentScroll > lastScroll && currentScroll > 80) {
+        // scrolling DOWN
+        setShow(false)
+        setOpen(false)
+      } else {
+        // scrolling UP
+        setShow(true)
+      }
+
+      setLastScroll(currentScroll)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [lastScroll])
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+    <header
+      className={`sticky top-0 z-50 bg-white/90 backdrop-blur border-b
+      transition-transform duration-300
+      ${show ? "translate-y-0" : "-translate-y-full"}`}
+    >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
         {/* LOGO */}
